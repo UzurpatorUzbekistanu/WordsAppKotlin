@@ -1,4 +1,4 @@
-package com.example.wordsapp.ui.theme
+package com.example.wordsapp.presentation.screens.theme
 
 import androidx.compose.ui.graphics.Color
 

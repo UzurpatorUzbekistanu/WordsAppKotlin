@@ -1,6 +1,5 @@
-package com.example.wordsapp.ui.theme
+package com.example.wordsapp.presentation.screens.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
