@@ -6,7 +6,7 @@ import androidx.compose.runtime.Composable
 
 
     @Composable
-    fun hint(){
+    fun Hint(){
         Text("jestem podpowiedzią")
     }
 

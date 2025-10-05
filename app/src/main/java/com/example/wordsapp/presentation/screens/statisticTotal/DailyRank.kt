@@ -5,6 +5,6 @@ import androidx.compose.runtime.Composable
 
 
 @Composable
-fun dailyRank(){
+fun DailyRank(){
     Text("jestem dailyRank")
 }

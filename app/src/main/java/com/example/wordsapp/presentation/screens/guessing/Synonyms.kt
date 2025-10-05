@@ -5,6 +5,6 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 
     @Composable
-    fun synonyms(){
+    fun Synonyms(){
         Text("jestem synonimami")
     }
