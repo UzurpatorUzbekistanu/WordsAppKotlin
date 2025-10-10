@@ -41,20 +41,33 @@ fun Screen(name: String, modifier: Modifier = Modifier) {
         ) {
             Column(
                 horizontalAlignment = Alignment.CenterHorizontally,
-                verticalArrangement = Arrangement.spacedBy(16.dp)
+                verticalArrangement = Arrangement.spacedBy(16.dp) // <-- odstępy pionowe
             ) {
-                Row {
+                Row(
+                    Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.spacedBy(16.dp), // <-- odstępy w wierszu
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
                     UserStatistic()
                     UserStatisticDetails()
                 }
-                Row {
-                    Column(horizontalAlignment = Alignment.CenterHorizontally) {
+
+                // Tu masz Row z jedną Columną — odstęp do poprzedniego/next już robi spacedBy w Column
+                Row(Modifier.fillMaxWidth()) {
+                    Column(
+                        horizontalAlignment = Alignment.CenterHorizontally,
+                        verticalArrangement = Arrangement.spacedBy(16.dp) // między Word/Hint/Synonyms
+                    ) {
                         WordToGuess()
                         Hint()
                         Synonyms()
                     }
                 }
-                Row {
+
+                Row(
+                    Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.spacedBy(16.dp) // między rankami
+                ) {
                     DailyRank()
                     MonthlyRank()
                     TopRank()
@@ -63,3 +76,4 @@ fun Screen(name: String, modifier: Modifier = Modifier) {
         }
     }
 }
+

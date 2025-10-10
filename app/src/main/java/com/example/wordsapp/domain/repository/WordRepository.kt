@@ -1,4 +1,5 @@
 package com.example.wordsapp.domain.repository
 
-class WordRepository {
+interface WordRepository {
+    fun getCorrectTranslation(wordId: String): String
 }
